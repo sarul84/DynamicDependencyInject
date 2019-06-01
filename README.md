@@ -54,5 +54,5 @@ public class ServicesProvider<TInterface> : IServicesProvider<TInterface>
 Register the above interface and implementation class with IoC container
 
 ```
-services.AddScoped(typeof(IServicesProvider<>), typeof(ServicesProvider<>));
+services.AddSingleton(typeof(IServicesProvider<>), typeof(ServicesProvider<>));
 ```
