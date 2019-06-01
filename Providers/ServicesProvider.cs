@@ -16,7 +16,7 @@ namespace DynamicDependencyInject.Providers
     /// Defines the <see cref="ServicesProvider{TInterface}" /> generic class to resolve and inject objects dynamically
     /// </summary>
     /// <typeparam name="TInterface">The generic interface type</typeparam>
-    public class ServicesProvider<TInterface> : IServicesProvider<TInterface>
+    public sealed class ServicesProvider<TInterface> : IServicesProvider<TInterface>
     {
         /// <summary>
         /// Defines the httpContextAccessor field
